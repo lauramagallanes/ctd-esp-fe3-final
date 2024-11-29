@@ -8,7 +8,7 @@ import { useGlobalStates } from '../Context/Context';
 const Navbar = () => {
   const { state, dispatch } = useGlobalStates();
   const toggleTheme = () => {
-    dispatch({ type: "TOGGLE_THEME" }); // Reducer debe manejar esta acción
+    dispatch({ type: "TOGGLE_THEME" }); 
   };
 
   return (
@@ -16,8 +16,7 @@ const Navbar = () => {
       <Link to={routes.inicio}> <h4>Home</h4> </Link>
       <Link to={routes.contacto}> <h4>Contacto</h4> </Link>      
       <Link to={routes.destacados}> <h4>Favs</h4> </Link>
-
-      {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
+      
       <button onClick={toggleTheme}>Change theme</button>
     </nav>
   )

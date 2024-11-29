@@ -4,6 +4,10 @@ export const reducer = (state, action) => {
         return { ...state, dentistas: action.payload };
       case "ADD_FAVS":
         return { ...state, favs: [...state.favs, action.payload] };
+      case "TOGGLE_THEME":
+        return { ...state, theme: state.theme === "dark" ? "light" : "dark" };
+        
+    
     //   case "DELETE_CART":
     //     const filterCart = []; //Falta completar
     //     return { ...state, cart: filterCart };

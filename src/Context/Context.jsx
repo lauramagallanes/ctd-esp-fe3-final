@@ -29,7 +29,8 @@ export const GlobalStates = createContext();
           });
       }, []);
       console.log(state); // trae todos los estados guardados que fueron inicializados en initialState
-      console.log(state.dentistas);
+      console.log(state.dentistas); // trae solo a los dentistas. Queda mosrarlos en las cards dentro de home
+
       
       
     

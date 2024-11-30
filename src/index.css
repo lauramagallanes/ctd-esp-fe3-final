@@ -112,6 +112,41 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 600px; /* Más ancho que una card */
+  padding: 1rem;
+  margin: 1rem auto; /* Centrado horizontal */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.details-container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.details-container h2,
+.details-container h3 {
+  margin: 0.5rem 0;
+  color: #555;
+  font-weight: 400;
+}
+.light .details-container {
+  border: 1px solid rgb(136, 136, 136);
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.dark .details-container {
+  border: 1px solid rgb(236, 236, 236);
+  background-color: #121212;
+  color: #fff;
+}
 
 .dark{
   background-color: #12121296;

@@ -6,7 +6,7 @@ import { useGlobalStates } from '../Context/Context';
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
-  const { state, dispatch } = useGlobalStates();
+  const { dispatch } = useGlobalStates();
   const toggleTheme = () => {
     dispatch({ type: "TOGGLE_THEME" }); 
   };

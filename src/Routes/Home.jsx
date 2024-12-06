@@ -6,19 +6,18 @@ import { useGlobalStates } from '../Context/Context'
 
 const Home = () => {
 
-  const {state} = useGlobalStates();
+  const { state } = useGlobalStates();
   console.log(state.dentistas); // con state.dentistas me traigo a todos los dentistas a los que hago fetch en Context
-  
+
   return (
     <main className="" >
       <h1>Home</h1>
       <div className='card-grid'>
-        {/* Aqui deberias renderizar las cards */}
-        {state.dentistas.map((dentista)=><Card key={dentista.id} dentista={dentista}/>)}
-        
+        {state.dentistas.map((dentista) => <Card key={dentista.id} dentista={dentista} />)}
+
       </div>
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
